@@ -179,3 +179,10 @@ p,li{overflow-wrap:break-word}
 .transformation-cta:hover{background:#19723d;transform:translateY(-2px)}
 .transformation-inner>small{color:#cdb9cf;font-size:11px;margin-top:12px}
 @media(max-width:760px){.transformation{padding:46px 16px}.transformation h2{font-size:clamp(27px,7.1vw,35px)}.transformation-intro{font-size:14px;line-height:1.65}.transformation-points{flex-direction:column;width:100%;max-width:400px;gap:9px;margin:23px 0}.transformation-points span{padding:11px 13px}.transformation-cta{width:100%;max-width:400px;font-size:13px;padding:16px 12px}}
+
+/* Brand refinement */
+a.logo{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;text-decoration:none}
+a.logo .brand-mark{display:block;width:39px;height:39px;flex-shrink:0;object-fit:contain;filter:drop-shadow(0 0 7px #e9b85235)}
+a.logo .brand-name{display:inline-block;font-family:'Playfair Display',Georgia,serif;font-size:20px;letter-spacing:-.025em;line-height:1.15;color:#fff5e9;font-weight:700}
+a.logo .brand-name em{font-style:normal;color:#f4cd70}
+@media(max-width:760px){a.logo{gap:7px}a.logo .brand-mark{width:30px;height:30px}a.logo .brand-name{font-size:15px}}
