@@ -149,3 +149,18 @@ p,li{overflow-wrap:break-word}
   .hero-pill{font-size:8px}
   .ribbon{grid-template-columns:1fr 1fr;gap:9px}
 }
+
+/* Offer countdown preview and real purchase social proof */
+.offer-clock{border:1px solid #edbd5d88;background:#260b33b8;border-radius:12px;padding:12px 16px;margin:13px 0 17px;max-width:350px;text-align:center;color:#fff5df}
+.clock-title{font-size:11px;font-weight:800;letter-spacing:.12em;color:#ffd982}
+.clock-numbers{display:flex;align-items:flex-start;justify-content:center;gap:9px;margin:8px 0 4px;font-variant-numeric:tabular-nums}
+.clock-numbers>span{font-size:26px;line-height:1.05;font-weight:800;min-width:43px}
+.clock-numbers b{font-size:21px;color:#f3c66c}
+.clock-numbers small{display:block;margin:5px 0 0;font-size:9px;color:#ddc7dc;font-weight:500;letter-spacing:.08em}
+.offer-clock p{font-size:10px;line-height:1.4;margin:9px 0 0;color:#ddc5dd}
+.offer-card .offer-clock{max-width:none;background:#391744;border-color:#b8873d;margin:15px 0}
+.purchase-notice{position:fixed;left:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:13px;max-width:min(350px,calc(100vw - 30px));padding:13px 14px;background:#fff8e8;color:#30133a;border:1px solid #dfb566;border-radius:12px;box-shadow:0 15px 45px #0007}
+.notice-icon{display:grid;place-items:center;background:#1f9b49;color:white;border-radius:50%;width:32px;height:32px;flex-shrink:0;font-weight:800}
+.purchase-notice strong{font-size:13px}.purchase-notice p{font-size:12px;margin:3px 0}.purchase-notice small{font-size:10px;color:#417a49;margin:0}.purchase-notice button{border:0;background:none;color:#654b67;font-size:20px;align-self:flex-start}
+@media(max-width:760px){.hero .offer-clock{margin:12px auto 16px}.purchase-notice{left:12px;bottom:12px;max-width:calc(100vw - 24px)}.clock-numbers>span{font-size:24px}}
+@media(prefers-reduced-motion:reduce){.purchase-notice{animation:none}}
