@@ -26,3 +26,22 @@
 .offer-card .cta{font-size:13px}
 @media(max-width:760px){.real-product .mock-book{left:26%}.real-product .mock-caption{left:24%;bottom:2%}.offer-price{font-size:54px}}
 @media(max-width:480px){.real-product .mock-book{width:290px;left:110px}.real-product .mock-card{width:145px;right:15px}.real-product .mock-card-two{right:0}.real-product .mock-caption{left:120px;bottom:4%}}
+
+/* Premium visual art direction, 2026-11 */
+.hero{background:radial-gradient(ellipse at 75% 40%,#7e287a 0%,#400b4f 36%,#18051f 77%)}
+.hero:after{content:'';pointer-events:none;position:absolute;inset:0;background:radial-gradient(ellipse at 78% 34%,#ff9c5c1c,transparent 45%);mix-blend-mode:screen}
+.hero-grid{grid-template-columns:1fr 1.06fr;gap:0;min-height:650px}
+.hero h1{font-size:clamp(42px,4.7vw,64px);line-height:1.09}
+.hero-copy{z-index:5}
+.premium-scene{position:relative;min-width:0;z-index:3;filter:drop-shadow(0 28px 28px #120419aa)}
+.premium-scene img{display:block;width:118%;max-width:none;margin-left:-7%;height:auto;aspect-ratio:11/9;object-fit:contain}
+.premium-scene-caption{position:absolute;bottom:3%;left:18%;font-size:10px;color:#d8bad5;background:#16051db3;padding:5px 12px;border-radius:20px}
+.offer-image{height:200px;overflow:visible}
+.offer-image img{height:195px;width:240px;object-fit:contain;box-shadow:none;transform:none;filter:drop-shadow(0 12px 9px #0005)}
+.receive{background:radial-gradient(ellipse at 25% 50%,#5c1a62,#240a30 70%)}
+.receive-grid{gap:70px}
+.offer-card{border-radius:20px}
+.hero-pill{display:inline-block;line-height:1.5}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr 1fr}.premium-scene img{width:120%;margin-left:-8%}}
+@media(max-width:760px){.hero-grid{display:flex;flex-direction:column}.premium-scene{width:100%;margin:8px 0 -8px}.premium-scene img{width:115%;margin-left:-7.5%;aspect-ratio:11/9}.premium-scene-caption{bottom:0;left:22%}.hero h1{font-size:clamp(39px,9vw,53px)}}
+@media(max-width:480px){.premium-scene{margin-top:0}.premium-scene img{width:120%;margin-left:-10%}.premium-scene-caption{font-size:9px;left:17%}.hero h1{font-size:39px}.offer-image img{width:230px}}
