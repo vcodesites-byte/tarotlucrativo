@@ -191,3 +191,15 @@ a.logo .brand-name em{font-style:normal;color:#f4cd70}
 .hero-copy>small{display:flex;align-items:center;justify-content:center;gap:6px;width:max-content;max-width:100%;margin:9px 0 0;text-align:center;font-size:11px;line-height:1.45}
 .hero-copy>small svg{flex:0 0 auto}
 @media(max-width:760px){.hero-copy>small{width:100%;margin:9px auto 0;padding:0 4px;font-size:10px}}
+
+/* Transformation: compact, readable on desktop and mobile */
+.transformation{padding:clamp(38px,5vw,58px) 16px}
+.transformation-inner{max-width:800px}
+.transformation-eyebrow{margin-bottom:12px;letter-spacing:.12em}
+.transformation h2{font-size:clamp(28px,3vw,40px);line-height:1.17;max-width:740px;text-wrap:balance}
+.transformation-intro{font-size:clamp(14px,1.25vw,16px);line-height:1.55;max-width:610px;margin:14px auto 0;text-wrap:pretty}
+.transformation-points{gap:9px;margin:19px 0 20px}
+.transformation-points span{padding:10px 13px;font-size:12px;line-height:1.4}
+.transformation-cta{min-height:52px;padding:14px 24px}
+.transformation-inner>small{margin:10px 0 0;justify-content:center}
+@media(max-width:760px){.transformation{padding:36px 16px}.transformation h2{font-size:clamp(27px,6.7vw,34px);line-height:1.2;max-width:22ch}.transformation-intro{font-size:14px;line-height:1.5;margin-top:12px}.transformation-points{display:grid;grid-template-columns:1fr;gap:7px;width:100%;max-width:400px;margin:16px 0}.transformation-points span{padding:9px 12px;font-size:12px}.transformation-cta{max-width:400px;min-height:50px;font-size:13px;padding:12px 15px}.transformation-eyebrow{font-size:10px}}
