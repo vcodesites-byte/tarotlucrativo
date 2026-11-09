@@ -186,3 +186,8 @@ a.logo .brand-mark{display:block;width:39px;height:39px;flex-shrink:0;object-fit
 a.logo .brand-name{display:inline-block;font-family:'Playfair Display',Georgia,serif;font-size:20px;letter-spacing:-.025em;line-height:1.15;color:#fff5e9;font-weight:700}
 a.logo .brand-name em{font-style:normal;color:#f4cd70}
 @media(max-width:760px){a.logo{gap:7px}a.logo .brand-mark{width:30px;height:30px}a.logo .brand-name{font-size:15px}}
+
+/* Center trust microcopy exactly under hero CTA */
+.hero-copy>small{display:flex;align-items:center;justify-content:center;gap:6px;width:max-content;max-width:100%;margin:9px 0 0;text-align:center;font-size:11px;line-height:1.45}
+.hero-copy>small svg{flex:0 0 auto}
+@media(max-width:760px){.hero-copy>small{width:100%;margin:9px auto 0;padding:0 4px;font-size:10px}}
