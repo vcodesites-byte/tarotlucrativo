@@ -97,3 +97,55 @@ html{overflow-x:clip}body{overflow-x:clip}img{max-width:100%}
 @media(max-width:1000px) and (min-width:761px){.receive-grid{gap:22px}.material-mockup img{width:108%;margin-left:-4%}}
 @media(max-width:760px){.receive-grid{display:flex;flex-direction:column;gap:24px}.material-mockup{width:100%;height:auto;max-width:560px;margin:0 auto;transform:none;overflow:visible}.material-mockup img{width:100%;max-width:100%;height:auto;margin:0;aspect-ratio:3/2}.receive-grid>div:last-child{width:100%}}
 @media(max-width:480px){.material-mockup{width:100%;height:auto;max-width:100%;transform:none;margin:0 auto}.material-mockup img{width:100%;max-width:100%;height:auto;margin:0}}
+
+/* Mobile-first conversion typography and readable spacing */
+h1,h2,h3{overflow-wrap:normal;word-break:normal;hyphens:none;text-wrap:balance}
+p,li{overflow-wrap:break-word}
+.cta{line-height:1.3;text-align:center;white-space:normal}
+@media(max-width:760px){
+  .hero-copy{max-width:560px;margin:0 auto}
+  .hero h1{font-size:clamp(32px,7.5vw,45px);line-height:1.14;letter-spacing:-.025em;margin:19px auto 18px;max-width:18ch;text-wrap:balance}
+  .hero-copy>p{font-size:15px;line-height:1.65;max-width:48ch;margin-bottom:0}
+  .hero-pill{max-width:100%;font-size:10px;line-height:1.45;letter-spacing:.055em}
+  .checks{gap:12px;max-width:390px;margin:22px auto}
+  .checks span{font-size:13px;line-height:1.45;align-items:flex-start}
+  .checks svg{flex-shrink:0;margin-top:1px}
+  .hero-price{margin:0 0 13px;font-size:14px}
+  .hero-price strong{font-size:21px}
+  .hero .cta{min-height:54px;max-width:430px;font-size:13px;padding:14px 18px;gap:10px}
+  .hero small{line-height:1.45;font-size:11px;margin:12px auto 0}
+  .section-head{margin-bottom:30px}
+  .section-head h2,.receive h2,.offer h2{font-size:clamp(30px,7vw,40px);line-height:1.18;letter-spacing:-.015em;text-wrap:balance}
+  .section-head p,.receive-grid>div>p,.offer-grid>div>p{font-size:14px;line-height:1.7}
+  .feature-list li{font-size:13px;line-height:1.5;align-items:flex-start}
+  .feature-list svg{width:18px;height:18px;margin-top:1px}
+  .inline-link{font-size:12px;line-height:1.5}
+  .modules article{min-height:0}
+  .modules h3{font-size:22px;line-height:1.25}
+  .modules p{font-size:13px;line-height:1.65}
+  .audience-grid div{font-size:13px;line-height:1.5;align-items:flex-start}
+  .offer-card{padding:26px 19px}
+  .offer-card h3{font-size:26px;line-height:1.22}
+  .offer-card .cta{min-height:55px;line-height:1.3;font-size:12px;gap:8px}
+  .purchase-benefits{padding:17px 14px}
+  .purchase-benefits span{font-size:12px;line-height:1.5}
+  .faq-item button{font-size:14px;line-height:1.45;padding:19px 2px}
+  .faq-item p{font-size:13px;line-height:1.7}
+  .ribbon span{line-height:1.4}
+}
+@media(max-width:420px){
+  .hero h1{font-size:clamp(30px,8.3vw,36px);max-width:19ch;letter-spacing:-.03em}
+  .hero-copy>p{font-size:14px;line-height:1.65}
+  .hero-pill{font-size:9px;padding:8px 10px}
+  .section-head h2,.receive h2,.offer h2{font-size:clamp(28px,7.6vw,34px)}
+  .offer-price{font-size:50px}
+  .logo{font-size:16px}
+  .ribbon{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:350px){
+  .wrap{width:calc(100% - 26px)}
+  .hero h1{font-size:29px}
+  .hero .cta,.offer-card .cta{font-size:11px;padding:13px 9px}
+  .hero-pill{font-size:8px}
+  .ribbon{grid-template-columns:1fr 1fr;gap:9px}
+}
