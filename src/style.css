@@ -164,3 +164,18 @@ p,li{overflow-wrap:break-word}
 .purchase-notice strong{font-size:13px}.purchase-notice p{font-size:12px;margin:3px 0}.purchase-notice small{font-size:10px;color:#417a49;margin:0}.purchase-notice button{border:0;background:none;color:#654b67;font-size:20px;align-self:flex-start}
 @media(max-width:760px){.hero .offer-clock{margin:12px auto 16px}.purchase-notice{left:12px;bottom:12px;max-width:calc(100vw - 24px)}.clock-numbers>span{font-size:24px}}
 @media(prefers-reduced-motion:reduce){.purchase-notice{animation:none}}
+
+/* Focused transformation section replacing decorative quote */
+.transformation{background:linear-gradient(135deg,#42134e 0%,#2d103c 58%,#3b1748 100%);padding:66px 20px;text-align:center;border-top:1px solid #d5a85426;border-bottom:1px solid #d5a85426}
+.transformation-inner{max-width:880px;margin:0 auto;display:flex;flex-direction:column;align-items:center}
+.transformation-eyebrow{font-size:11px;letter-spacing:.17em;font-weight:800;color:#f4c968;margin-bottom:19px}
+.transformation h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(29px,3.3vw,44px);line-height:1.22;letter-spacing:-.02em;color:#fff5ed;margin:0;max-width:820px}
+.transformation h2 em{font-style:normal;color:#f4cc76}
+.transformation-intro{font-size:15px;line-height:1.75;color:#e5d5e6;max-width:680px;margin:20px auto 0}
+.transformation-points{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:28px 0 25px}
+.transformation-points span{display:flex;align-items:center;gap:8px;border:1px solid #e4ba6445;background:#ffffff0b;border-radius:10px;padding:12px 15px;color:#f8eafa;font-size:13px;font-weight:600;text-align:left}
+.transformation-points svg{flex-shrink:0;color:#f5cd78}
+.transformation-cta{display:inline-flex;align-items:center;justify-content:center;gap:12px;border-radius:10px;background:#218a4b;color:white;text-decoration:none;font-size:14px;font-weight:800;padding:17px 28px;box-shadow:0 8px 25px #0003;transition:background .2s,transform .2s}
+.transformation-cta:hover{background:#19723d;transform:translateY(-2px)}
+.transformation-inner>small{color:#cdb9cf;font-size:11px;margin-top:12px}
+@media(max-width:760px){.transformation{padding:46px 16px}.transformation h2{font-size:clamp(27px,7.1vw,35px)}.transformation-intro{font-size:14px;line-height:1.65}.transformation-points{flex-direction:column;width:100%;max-width:400px;gap:9px;margin:23px 0}.transformation-points span{padding:11px 13px}.transformation-cta{width:100%;max-width:400px;font-size:13px;padding:16px 12px}}
