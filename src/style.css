@@ -45,3 +45,15 @@
 @media(max-width:1000px){.hero-grid{grid-template-columns:1fr 1fr}.premium-scene img{width:120%;margin-left:-8%}}
 @media(max-width:760px){.hero-grid{display:flex;flex-direction:column}.premium-scene{width:100%;margin:8px 0 -8px}.premium-scene img{width:115%;margin-left:-7.5%;aspect-ratio:11/9}.premium-scene-caption{bottom:0;left:22%}.hero h1{font-size:clamp(39px,9vw,53px)}}
 @media(max-width:480px){.premium-scene{margin-top:0}.premium-scene img{width:120%;margin-left:-10%}.premium-scene-caption{font-size:9px;left:17%}.hero h1{font-size:39px}.offer-image img{width:230px}}
+
+/* Mockup WebP: final placement and responsive sizing */
+.hero{overflow:hidden}
+.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.12fr);gap:12px;align-items:center}
+.premium-scene{width:100%;min-width:0;filter:drop-shadow(0 18px 26px #08030e80)}
+.premium-scene img{width:116%;max-width:none;height:auto;aspect-ratio:3/2;object-fit:contain;margin:0 0 0 -7%;display:block}
+.premium-scene-caption{bottom:0;left:15%;font-size:10px}
+.offer-image{height:auto;min-height:225px;margin:12px 0 8px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.offer-image img{display:block;width:100%;max-width:355px;height:auto;max-height:none;aspect-ratio:3/2;object-fit:contain;transform:none;filter:drop-shadow(0 9px 11px #29123240)}
+@media(max-width:1000px) and (min-width:761px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.premium-scene img{width:120%;margin-left:-9%}.offer-image{min-height:185px}}
+@media(max-width:760px){.hero-grid{display:flex;flex-direction:column;gap:14px}.premium-scene{width:100%;margin:0 auto 4px}.premium-scene img{width:110%;margin-left:-5%;aspect-ratio:3/2}.premium-scene-caption{bottom:-2px;left:50%;transform:translateX(-50%);white-space:nowrap}.offer-image{min-height:0;margin:14px 0 8px}.offer-image img{width:100%;max-width:350px}}
+@media(max-width:480px){.premium-scene{width:100%;left:auto;margin:0 auto 8px;transform:none;height:auto}.premium-scene img{width:112%;margin-left:-6%;aspect-ratio:3/2}.premium-scene-caption{font-size:9px}.offer-image img{max-width:310px}.hero-grid{padding-bottom:32px}}
