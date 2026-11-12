@@ -203,3 +203,8 @@ a.logo .brand-name em{font-style:normal;color:#f4cd70}
 .transformation-cta{min-height:52px;padding:14px 24px}
 .transformation-inner>small{margin:10px 0 0;justify-content:center}
 @media(max-width:760px){.transformation{padding:36px 16px}.transformation h2{font-size:clamp(27px,6.7vw,34px);line-height:1.2;max-width:22ch}.transformation-intro{font-size:14px;line-height:1.5;margin-top:12px}.transformation-points{display:grid;grid-template-columns:1fr;gap:7px;width:100%;max-width:400px;margin:16px 0}.transformation-points span{padding:9px 12px;font-size:12px}.transformation-cta{max-width:400px;min-height:50px;font-size:13px;padding:12px 15px}.transformation-eyebrow{font-size:10px}}
+
+/* Copy refinement: natural wrapping without forced narrow headline columns */
+.hero h1,.section-head h2,.receive h2,.offer h2,.transformation h2{word-break:normal;overflow-wrap:normal;hyphens:none;text-wrap:balance}
+@media(max-width:760px){.hero h1{max-width:100%;font-size:clamp(31px,7.4vw,44px);line-height:1.16}.transformation h2{max-width:100%}.receive-grid>div:last-child,.offer-grid>div:first-child{min-width:0}.feature-list li{align-items:flex-start}.modules{gap:12px}}
+@media(max-width:420px){.hero h1{max-width:100%;font-size:clamp(30px,8vw,35px)}.section-head h2,.receive h2,.offer h2{overflow-wrap:normal}}
