@@ -208,3 +208,14 @@ a.logo .brand-name em{font-style:normal;color:#f4cd70}
 .hero h1,.section-head h2,.receive h2,.offer h2,.transformation h2{word-break:normal;overflow-wrap:normal;hyphens:none;text-wrap:balance}
 @media(max-width:760px){.hero h1{max-width:100%;font-size:clamp(31px,7.4vw,44px);line-height:1.16}.transformation h2{max-width:100%}.receive-grid>div:last-child,.offer-grid>div:first-child{min-width:0}.feature-list li{align-items:flex-start}.modules{gap:12px}}
 @media(max-width:420px){.hero h1{max-width:100%;font-size:clamp(30px,8vw,35px)}.section-head h2,.receive h2,.offer h2{overflow-wrap:normal}}
+
+/* Hero subtitle: balanced, intentional line breaks on phones; copy unchanged */
+@media(max-width:760px){
+  .hero-copy>p{width:100%;max-width:39ch;margin:0 auto;text-align:center;text-wrap:balance;line-height:1.6}
+}
+@media(max-width:480px){
+  .hero-copy>p{max-width:36ch;font-size:clamp(14px,3.8vw,15px);line-height:1.58;letter-spacing:-.01em}
+}
+@media(max-width:360px){
+  .hero-copy>p{max-width:34ch;font-size:14px}
+}
